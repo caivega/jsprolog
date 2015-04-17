@@ -516,7 +516,7 @@ function JSProlog(envsettings) {
         return;
       }
 
-      r = this.remainder.match(/^([a-zA-Z0-9][a-zA-Z0-9_]*)(.*)$/);
+      r = this.remainder.match(/^([\u4e00-\u9fa5a-zA-Z0-9][\u4e00-\u9fa5a-zA-Z0-9_]*)(.*)$/);
       if (r) {
         this.remainder = r[2];
         this.current = r[1];
